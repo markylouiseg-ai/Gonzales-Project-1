@@ -1,0 +1,141 @@
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: #14213d;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fca311;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 10%;
+    background: #e5eaf5;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #14213d;
+}
+
+.hero h2 {
+    color: #fca311;
+    margin-bottom: 15px;
+}
+
+.hero img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #14213d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section:not(.hero) {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #14213d;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background: #14213d;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+footer {
+    background: #14213d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+}
