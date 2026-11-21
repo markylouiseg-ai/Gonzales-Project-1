@@ -108,6 +108,20 @@ section h2 {
     border-radius: 8px;
 }
 
+.skill-group {
+    margin: 30px auto 0;
+}
+
+.skill-group h3 {
+    margin-bottom: 15px;
+    color: #f8fbff;
+}
+
+.skill.language {
+    background: #087ea4;
+    border: 1px solid #67d3ff;
+}
+
 .project-card {
     background: rgba(15, 35, 58, 0.92);
     color: #dbe7f5;
