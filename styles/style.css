@@ -8,8 +8,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6fb;
-    color: #222;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(34, 211, 238, 0.12), transparent 25%),
+        linear-gradient(135deg, #07111f 0%, #0b1c33 55%, #101827 100%);
+    color: #dbe7f5;
     line-height: 1.6;
 }
 
@@ -49,12 +51,15 @@ nav a:hover {
     justify-content: space-around;
     align-items: center;
     padding: 60px 10%;
-    background: #e5eaf5;
+    background:
+        linear-gradient(135deg, rgba(14, 165, 233, 0.12), rgba(6, 182, 212, 0.04)),
+        #0d1b2f;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.18);
 }
 
 .hero h1 {
     font-size: 48px;
-    color: #14213d;
+    color: #f8fbff;
 }
 
 .hero h2 {
@@ -86,7 +91,7 @@ section:not(.hero) {
 
 section h2 {
     margin-bottom: 25px;
-    color: #14213d;
+    color: #67d3ff;
 }
 
 .skills-container {
@@ -104,10 +109,16 @@ section h2 {
 }
 
 .project-card {
-    background: white;
+    background: rgba(15, 35, 58, 0.92);
+    color: #dbe7f5;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 3px 10px #00000015;
+    border: 1px solid rgba(56, 189, 248, 0.18);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+}
+
+.project-card h3 {
+    color: #f8fbff;
 }
 
 footer {
